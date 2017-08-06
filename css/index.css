@@ -1,0 +1,235 @@
+/* 头部样式 */
+.jd-header{
+	height: 40px;
+	background-color: rgba(201, 21, 35, 1);
+	position: fixed;
+	width: 100%;
+	z-index: 9998;
+}
+.jd-header .left{
+	width: 75px;
+	height: 40px;
+	position: relative;
+}
+.jd-header .left:before{
+	width: 56px;
+	height: 20px;
+	background-position: 0 -110px;
+}
+
+.jd-header .right{
+	width: 50px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 14px;
+}
+.jd-header .right a{
+	color: #fff;
+}
+.jd-header .center{
+	height: 40px;
+	margin:0 50px 0 75px;
+	position: relative;
+}
+.jd-header .center input[type='search']{
+	height: 30px;
+	width: 100%;
+	border-radius: 15px;
+	margin-top: 5px;
+	text-indent: 30px;
+}
+.jd-header .center:before{
+	width: 19px;
+	height: 19px;
+	background-position:  -60px -110px;
+	left: 5px;
+}
+
+/* 轮播图样式 */
+.jd-carousel{
+	position: relative;
+	overflow: hidden;
+}
+.jd-carousel ul>li{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	/*将li先移动到屏幕外去，用transform*/
+	/* 不能用left去移动li，因为这样将他的初始原点也移动到了100%的位置上，不利于后期的JS计算 */
+	transform: translateX(100%);
+}
+.jd-carousel ol{
+	bottom: 10px;
+}
+.jd-carousel ol>li{
+	width: 8px;
+	height: 8px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	float: left;
+	margin:0 3px;
+}
+ .active{
+	background: #fff;
+}
+
+
+
+
+/* 导航样式 */
+.jd-nav{
+	padding:10px 0;
+	background:#f3f3f3;
+}
+.jd-nav .w20 .nav-icons{
+	display: block;
+	padding:0 10px;
+}
+.jd-nav .w20 .nav-txt{
+	text-align: center;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+/* 京东快报 */
+.jd-news{
+	background: #f3f3f3;
+	padding:10px 0;
+}
+.jd-news .jd-news-info{
+	height: 30px;
+	border-radius: 5px;
+	background: #fff;
+	margin:0 10px;
+}
+.jd-news .jd-news-info .left{
+	width: 82px;
+	height: 30px;
+	position: relative;
+}
+.jd-news .jd-news-info .right{
+	width: 40px;
+	height: 30px;
+	line-height: 30px;
+}
+.jd-news .jd-news-info .center{
+	height: 30px;
+	margin:0 40px 0 82px;
+	overflow: hidden;
+}
+.jd-news .jd-news-info .center ul.new-scroll li{
+	line-height: 30px;
+	text-indent: 5px;
+}
+/* 京东秒杀 */
+.jd-ms{
+	background-color: #fff;
+
+}
+.jd-ms .jd-ms-t{
+	height: 35px;
+	line-height: 35px;
+}
+.jd-ms .jd-ms-txt{
+	color: #ca1327;
+    text-indent: 30px;
+    letter-spacing: 5px;
+    position: relative;
+}
+.jd-ms-t .jd-ms-txt:before{
+	width: 17px;
+	height: 22px;
+	background-position:-84px -109px ;
+	left: 10px;
+}
+.jd-ms .jd-ms-time {
+	 /* 去掉行内块默认的边距 */
+	font-size: 0;
+	line-height: 1;
+} 
+
+.jd-ms .jd-ms-time>span{
+	padding:5px 2px;
+	background: #000;
+	color: #fff;
+	font-size: 12px;
+	display: inline-block;
+	line-height: 1;
+	margin-top: 7px;
+	text-align: center;
+}
+.jd-ms .jd-ms-time>span:nth-child(3n){
+	background: #fff;
+	color: #000;
+}
+.jd-ms .jd-ms-time>span:nth-child(3n+1){
+	border-radius: 5px 0 0 5px;
+}
+.jd-ms .jd-ms-time>span:nth-child(3n+2){
+	border-radius: 0 5px 5px 0;
+}
+
+.jd-ms .jd-ms-t .right{
+	margin-right: 10px;
+}
+/*秒杀内容*/
+.jd-ms .jd-ms-b{
+	overflow: auto;
+	-webkit-overflow-scrolling : touch;
+}
+
+.jd-ms .jd-ms-b ul{
+	width: 10000px;
+}
+.jd-ms .jd-ms-b ul li{
+	width: 92px;
+}
+.jd-ms .jd-ms-b ul li>a{
+	display: block;
+	border-right: 1px solid #ccc;
+	overflow: hidden;
+}
+.jd-ms .jd-ms-b ul li>a img{
+	width: 60px;
+	height: 60px;
+	margin: 5px auto;
+}
+.jd-ms .jd-ms-b ul li>p{
+	text-align: center;
+	line-height: 20px;
+}
+.jd-ms .jd-ms-b ul li>p.new-price{
+	color: #F35353;
+	font-size: 16px;
+}
+.jd-ms .jd-ms-b ul li>p.old-price{
+	text-decoration: line-through;
+}
+
+/*京东产品区域样式*/
+.jd-product ul>li{
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.jd-product ul>li>a{
+	display: block;
+	padding: 10px;
+}
+.jd-product ul>li .pro-txt{
+	width: 55%;
+}
+.jd-product ul>li .pro-pic{
+	width: 45%;
+}
+/*用伪类制作那个边框*/
+.jd-product ul>li:nth-child(2n+1):before{
+	content: '';
+	width: 0;
+	height: 100%;
+	border-right: 1px solid #ccc;
+	position: absolute;
+	top: 0;
+	right: 0;
+}

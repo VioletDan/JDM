@@ -1,0 +1,69 @@
+.main{
+    width: 100%;
+    padding-top: 45px;
+}
+.main .safe-tips{
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.main .safe-tips .safe-icon{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: url(../images/icons/safe_icon.png) 0 0 no-repeat;
+    background-size: 100%;
+    vertical-align: middle;
+}
+
+/*购物车内容*/
+.main .car-pro{
+    margin-top: 15px;
+    background-color: #fff;
+}
+.main .car-pro .pro-t{
+    height: 35px;
+    line-height: 35px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.main .car-pro .checkbox-wrap{
+    width: 40px;
+    height: 35px;
+    position: relative;
+}
+.main .car-pro  .checkbox-wrap:before {
+    width: 20px;
+    height: 20px;
+    background-position: -180px -90px;
+}
+.main .car-pro .pro-t .jd-zy{
+    position: relative;
+    text-indent: 20px;
+}
+.main .car-pro .pro-t .jd-zy:before{
+    width: 15px;
+    height: 10px;
+    left: 0;
+    -webkit-background-size: 120px;
+    background-size: 120px;
+}
+.main .car-pro .pro-t .jd-free{
+    color: red;
+    margin-right: 10px;
+}
+.checkbox-wrap input[type="checkbox"] {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+}
+
+.car-pro .pro-b .pro-items {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

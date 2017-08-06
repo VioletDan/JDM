@@ -1,0 +1,201 @@
+/*
+* @Author: Administrator
+* @Date:   2017-05-13 15:57:44
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-05-17 22:51:53
+*/
+.safe-tips {
+	height: 34px;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+	text-align: center;
+	line-height: 34px;
+}
+.safe-icon {
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	background:  url(../images/icons/safe_icon.png) 0 0 no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	vertical-align: middle;
+	margin-bottom: 3px;
+}
+/* 主体区域 */
+.car-pro {
+	background-color: #fff;
+	margin-top: 15px;
+}
+.car-pro .pro-t {
+	height: 35px;
+	border-top:1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	line-height: 35px;
+}
+.car-pro .pro-t .free{
+	margin-right: 10px;
+	color: red;
+}
+.car-pro .pro-t .jd-zy {
+	position: relative;
+	text-indent: 20px;
+}
+.car-pro .pro-t .jd-zy:before {
+	width: 15px;
+	height: 10px;
+	left: 0;
+	-webkit-background-size: 120px;
+	background-size: 120px;
+}
+.car-pro .pro-b {
+
+}
+.car-pro .pro-b .pro-items {
+	border-bottom: 1px solid #ccc;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.car-pro .pro-b .pro-pic {
+	width: 80px;
+	height: 80px;
+}
+.car-pro .pro-b .pro-dsc {
+	height: 80px;
+	margin-left: 130px;
+}
+.car-pro .pro-b .pro-dsc-t {
+	-webkit-line-clamp: 2;
+}
+.car-pro .pro-b .pro-dsc-b {
+	margin-top: 15px;
+}
+.car-pro .pro-b .btns-wrap {
+	width: 117px;
+    border: 1px solid #ccc;
+    height: 28px;
+    font-size: 0;
+}
+.car-pro .pro-b .btns-wrap  span {
+	display: inline-block;
+	width: 33.333%;
+	font-size: 12px;
+	height: 100%;
+	text-align: center;
+	line-height: 28px;
+}
+.car-pro .pro-b .btns-wrap  span:nth-child(2) input{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.car-pro .pro-b .del-wrap {
+	margin-right: 10px;
+	margin-top: 3px;
+}
+.car-pro .pro-b .del-t {
+	width: 20px;
+	height: 5px;
+	background:  url(../images/icons/delete_up.png) 0 0 no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	transition: transform .5s;
+	transform-origin: left bottom;
+}
+.car-pro .pro-b .del-b {
+	width: 18px;
+	height: 18px;
+	background:  url(../images/icons/delete_down.png) 0 0 no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	margin: 0 auto;
+}
+/*
+	animation需要添加前缀
+	keyframes也需要添加前缀
+	keyframes的前缀是添加在@-webkit-keyframes
+ */
+@-webkit-keyframes myBounceInDown {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-50%, -3000px, 0);
+    transform: translate3d(-50%, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-50%, -30%, 0);
+    transform: translate3d(-50%, -30%, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-50%, -60%, 0);
+    transform: translate3d(-50%, -60%, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-50%, -45%, 0);
+    transform: translate3d(-50%, -45%, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+  }
+}
+
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-50%, -3000px, 0);
+    transform: translate3d(-50%, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-50%, 25px, 0);
+    transform: translate3d(-50%, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-50%, -10px, 0);
+    transform: translate3d(-50%, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-50%, 5px, 0);
+    transform: translate3d(-50%, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(-50%, 5px, 0);
+    transform: translate3d(-50%, 5px, 0);
+  }
+}
+
+.myBounceInDown {
+  -webkit-animation-name: myBounceInDown;
+  animation-name: myBounceInDown;
+}
+
+.jd-tips .tips-word{
+	width: 200px;
+	height: 30px;
+	background-color: rgba(0,0,0,.8);
+	line-height: 30px;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	display: none;
+}

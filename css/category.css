@@ -1,0 +1,43 @@
+
+/*内容样式*/
+html,body{
+    height: 100%;
+}
+.cate-main{
+    height: 100%;
+    padding-top: 45px;
+    -webkit-box-sizing:border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.cate-main .left{
+    width: 74px;
+    height: 100%;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+.cate-main .left>ul>li{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+.cate-main .right{
+    height: 100%;
+    margin-left: 85px;
+}
+.cate-main .right .cate-tit{
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 2;
+}
+.cate-main .right .scroll ul>li.cate-items{
+    text-align: center;
+}
+.cate-main .right .scroll ul>li.cate-items a{
+    display: block;
+    padding: 0 10px;
+}
+.cate-main .right .scroll {
+    margin-top: 10px;
+    overflow: hidden;
+}
